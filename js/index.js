@@ -40,3 +40,48 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const titleImg = document.getElementById('cta-img')
+titleImg.setAttribute('src', siteContent['cta']['img-src'])
+
+const midImg = document.getElementById('middle-img')
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+const navBar = document.querySelectorAll('a')
+navBar[0].textContent = siteContent['nav']['nav-item-1']
+navBar[1].textContent = siteContent['nav']['nav-item-2']
+navBar[2].textContent = siteContent['nav']['nav-item-3']
+navBar[3].textContent = siteContent['nav']['nav-item-4']
+navBar[4].textContent = siteContent['nav']['nav-item-5']
+navBar[5].textContent = siteContent['nav']['nav-item-6']
+
+const ctaText = document.querySelector('h1')
+ctaText.textContent = siteContent['cta']['h1']
+
+const ctaButton = document.querySelector('button')
+ctaButton.textContent = siteContent['cta']['button']
+
+const h4Title = document.querySelectorAll('h4')
+h4Title[0].textContent = siteContent['main-content']['features-h4']
+h4Title[1].textContent = siteContent['main-content']['about-h4']
+h4Title[2].textContent = siteContent['main-content']['services-h4']
+h4Title[3].textContent = siteContent['main-content']['product-h4']
+h4Title[4].textContent = siteContent['main-content']['vision-h4']
+h4Title[5].textContent = siteContent['contact']['contact-h4']
+
+const topPar = document.querySelectorAll('.top-content p')
+topPar[0].textContent = siteContent['main-content']['features-content']
+topPar[1].textContent = siteContent['main-content']['about-content']
+
+const botPar = document.querySelectorAll('.bottom-content .text-content p')
+botPar[0].textContent = siteContent['main-content']['services-content']
+botPar[1].textContent = siteContent['main-content']['product-content']
+botPar[2].textContent = siteContent['main-content']['vision-content']
+
+const contactPar = document.querySelectorAll('.contact p')
+contactPar[0].textContent = siteContent['contact']['address']
+contactPar[1].textContent = siteContent['contact']['phone']
+contactPar[2].textContent = siteContent['contact']['email']
+
+const footer = document.querySelector('footer p')
+footer.textContent = siteContent['footer']['copyright']
