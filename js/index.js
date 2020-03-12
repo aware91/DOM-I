@@ -54,6 +54,16 @@ navBar[2].textContent = siteContent['nav']['nav-item-3']
 navBar[3].textContent = siteContent['nav']['nav-item-4']
 navBar[4].textContent = siteContent['nav']['nav-item-5']
 navBar[5].textContent = siteContent['nav']['nav-item-6']
+navBar.forEach(element => {
+  element.style.color = 'green';
+})
+
+const newLink = document.createElement('a')
+newLink.textContent = 'New Link'
+newLink.classList.add('a-link')
+const nav = document.querySelector('nav')
+nav.prepend(newLink)
+nav.appendChild(newLink)
 
 const ctaText = document.querySelector('h1')
 ctaText.textContent = siteContent['cta']['h1']
