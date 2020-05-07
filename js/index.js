@@ -58,22 +58,27 @@ navBar.forEach(element => {
   element.style.color = 'green';
 })
 
+const header = document.querySelector('header')
+header.style.background = 'lightblue'
+
 const newLink = document.createElement('a')
 newLink.textContent = 'New Link'
 newLink.classList.add('a-link')
 const nav = document.querySelector('nav')
 nav.prepend(newLink)
+
 const newLink2 = document.createElement('a')
 newLink2.textContent = 'New Link 2'
 newLink2.classList.add('a-link')
 const nav2 = document.querySelector('nav') 
-nav.appendChild(newLink2)
+nav2.appendChild(newLink2)
 
 const ctaText = document.querySelector('h1')
 ctaText.textContent = siteContent['cta']['h1']
 
 const ctaButton = document.querySelector('button')
 ctaButton.textContent = siteContent['cta']['button']
+ctaButton.style.borderRadius = '10px'
 
 const h4Title = document.querySelectorAll('h4')
 h4Title[0].textContent = siteContent['main-content']['features-h4']
