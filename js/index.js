@@ -63,7 +63,11 @@ newLink.textContent = 'New Link'
 newLink.classList.add('a-link')
 const nav = document.querySelector('nav')
 nav.prepend(newLink)
-nav.appendChild(newLink)
+const newLink2 = document.createElement('a')
+newLink2.textContent = 'New Link 2'
+newLink2.classList.add('a-link')
+const nav2 = document.querySelector('nav') 
+nav.appendChild(newLink2)
 
 const ctaText = document.querySelector('h1')
 ctaText.textContent = siteContent['cta']['h1']
